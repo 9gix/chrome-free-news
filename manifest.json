@@ -1,0 +1,17 @@
+{
+    "name": "Free News",
+    "version": "1.1",
+    "description": "Freedom of Knowledge by reading news",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+     {
+     "matches": [
+        "https://www.bloomberg.com/*",
+        "https://www.nytimes.com/*"
+     ],
+      "js": ["content.js"],
+      "run_at": "document_end"
+     }
+    ],
+    "manifest_version": 2
+}
